@@ -1,0 +1,62 @@
+/* Root */
+
+
+/* Reset */
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav li {
+    padding: 0 25px;
+}
+
+nav a:active {
+    color: #DEEBFF;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: #0065FC;
+    cursor: pointer;
+}
+
+#signUp {
+    font-weight: bold;
+    color: #0065FC !important;
+}
+
+/* test */
+main {
+    width: 90%;
+    margin: auto;
+}
