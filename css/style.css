@@ -37,26 +37,74 @@ nav li {
     padding: 0 25px;
 }
 
-nav a:active {
-    color: #DEEBFF;
-}
-
-nav a:visited {
+a:visited {
     color: black;
 }
 
-nav a:hover {
+a:active {
     color: #0065FC;
+}
+
+a:hover {
     cursor: pointer;
+}
+
+#accom {
+    font-weight: 500;
+}
+
+#activities {
+    font-weight: 500;
 }
 
 #signUp {
     font-weight: bold;
-    color: #0065FC !important;
+    color: #0065FC;
 }
 
 /* test */
 main {
     width: 90%;
     margin: auto;
+}
+
+/* Search bar */
+
+#searchBar {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.locTagBox {
+    background-color: #f2f2f2;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px 0 0 15px;
+}
+
+#textField {
+    height: 50px;
+    padding: 0 15px 0 15px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid #f2f2f2;
+    outline: none;
+}
+
+#textField::placeholder {
+    color: black;
+}
+
+.srchBtn {
+    height: 50px;
+    width: 100px;
+    border-radius: 0 15px 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
+    outline: none;
 }
