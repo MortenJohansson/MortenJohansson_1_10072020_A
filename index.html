@@ -8,19 +8,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    <script
+      src="https://kit.fontawesome.com/f66cd0eac2.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <title>Reservia</title>
   </head>
   <body>
     <header>
       <nav>
         <div id="logo">
-          <img src="img/Reservia.svg" alt="logo">
+          <img src="img/Reservia.svg" alt="logo" />
         </div>
         <ul>
           <li><a id="accom" href="#accommodations">Accommodations</a></li>
@@ -34,10 +32,43 @@
       <p>Downtown or in nature</p>
       <div id="searchBar">
         <div class="locTagBox">
-          <i class="fas fa-map-marker-alt locTag"></i>
+          <i class="fas fa-map-marker-alt"></i>
         </div>
-        <input type="text" name="searchBar" id="textField" placeholder="Enter country..." required>
-        <input type="submit" value="Search" class="srchBtn">
+        <input
+          type="text"
+          name="searchBar"
+          id="textField"
+          placeholder="Enter country..."
+          required
+        />
+        <input type="submit" value="Search" class="srchBtn" />
+      </div>
+      <div id="filter">
+        <h4>Filters</h4>
+        <div id="filterBtns">
+          <div id="lowCostIcon">
+            <i class="fas fa-money-bill-wave"></i>
+          </div>
+          <input type="button" value="Low Cost" class="filterBtn" />
+        </div>
+        <div id="filterBtns">
+          <div id="lowCostIcon">
+            <i class="fas fa-child"></i>
+          </div>
+          <input type="button" value="Family-firendly" class="filterBtn" />
+        </div>
+        <div id="filterBtns">
+          <div id="lowCostIcon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <input type="button" value="Romantic" class="filterBtn" />
+        </div>
+        <div id="filterBtns">
+          <div id="lowCostIcon">
+            <i class="fas fa-dog"></i>
+          </div>
+          <input type="button" value="Pets allowed" class="filterBtn" />
+        </div>
       </div>
     </main>
   </body>
