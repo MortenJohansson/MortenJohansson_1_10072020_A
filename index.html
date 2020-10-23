@@ -23,7 +23,7 @@
         <ul>
           <li><a id="accom" href="#accommodations">Accommodations</a></li>
           <li><a id="activities" href="#activities">Activities</a></li>
-          <li><a id="signUp" href="#signUp">Sign Up</a></li>
+          <button type="submit" id="signUp">Sign Up</button>
         </ul>
       </nav>
     </header>
@@ -41,35 +41,41 @@
           placeholder="Enter country..."
           required
         />
-        <input type="submit" value="Search" class="srchBtn" />
-      </div>
-      <div id="filter">
-        <h4>Filters</h4>
-        <div id="filterBtns">
-          <div id="lowCostIcon">
-            <i class="fas fa-money-bill-wave"></i>
-          </div>
-          <input type="button" value="Low Cost" class="filterBtn" />
-        </div>
-        <div id="filterBtns">
-          <div id="lowCostIcon">
-            <i class="fas fa-child"></i>
-          </div>
-          <input type="button" value="Family-firendly" class="filterBtn" />
-        </div>
-        <div id="filterBtns">
-          <div id="lowCostIcon">
-            <i class="fas fa-heart"></i>
-          </div>
-          <input type="button" value="Romantic" class="filterBtn" />
-        </div>
-        <div id="filterBtns">
-          <div id="lowCostIcon">
-            <i class="fas fa-dog"></i>
-          </div>
-          <input type="button" value="Pets allowed" class="filterBtn" />
+        <div id="searchBtn">
+          <button type="submit" class="srchBtn"><i class="fas fa-search"></i><span id="srchBtnText">Search</span></button>
         </div>
       </div>
+      <section id="filterSection">
+        <div id="filterHeader">
+          <h4>Filters</h4>
+        </div>
+        <div id="filters">
+          <div id="filterBtns">
+            <div id="lowCostIcon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <input type="button" value="Low Cost" class="filterBtn" />
+          </div>
+          <div id="filterBtns">
+            <div id="lowCostIcon">
+              <i class="fas fa-child"></i>
+            </div>
+            <input type="button" value="Family-firendly" class="filterBtn" />
+          </div>
+          <div id="filterBtns">
+            <div id="lowCostIcon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <input type="button" value="Romantic" class="filterBtn" />
+          </div>
+          <div id="filterBtns">
+            <div id="lowCostIcon">
+              <i class="fas fa-dog"></i>
+            </div>
+            <input type="button" value="Pets allowed" class="filterBtn" />
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

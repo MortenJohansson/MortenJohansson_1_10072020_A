@@ -1,156 +1,232 @@
-/* Root */
-
-
 /* Reset */
 * {
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 /* General styling */
 body {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Navbar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 10vh;
-    width: 90%;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+  display: flex;
+  list-style: none;
+  padding-left: 50%;
 }
 
 nav li {
-    padding: 0 25px;
+  padding: 0 25px;
 }
 
 a:visited {
-    color: black;
+  color: black;
 }
 
 a:active {
-    color: #0065FC;
+  color: #0065fc;
 }
 
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #accom {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 #activities {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 #signUp {
-    font-weight: bold;
-    color: #0065FC;
+  display: flex;
+  justify-content: right;
+  font-weight: bold;
+  background-color: white;
+  color: #0065fc;
+  min-width: 80px;
+  padding-left: 25px;
+  outline: none;
+  cursor: pointer;
 }
 
 /* test */
 main {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
 /* Search bar */
 
 #searchBar {
-    display: flex;
+  display: flex;
 }
 
 .locTagBox {
-    background-color: #f2f2f2;
-    height: 50px;
-    width: 50px;
-    border-radius: 15px 0 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #f2f2f2;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px 0 0 15px;
 }
 
 .fa-map-marker-alt::before {
-    position: absolute;
-    margin-left: 17px;
-    font-size: 20px;
+  font-size: 20px;
+  color: black !important;
 }
 
 #textField {
-    height: 50px;
-    padding: 0 15px 0 15px;
-    width: 250px;
-    font-size: 20px;
-    font-weight: 700;
-    border: 1px solid #f2f2f2;
-    outline: none;
+  height: 50px;
+  padding: 0 15px 0 60px;
+  width: 250px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 15px 0 0 15px;
+  border: 1px solid #f2f2f2;
+  outline: none;
 }
 
 #textField::placeholder {
-    color: black;
+  color: black;
 }
 
 .srchBtn {
-    height: 50px;
-    width: 100px;
-    border-radius: 0 15px 15px 0;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: #0065FC;
-    color: white;
-    cursor: pointer;
-    outline: none;
+  height: 50px;
+  width: 100px;
+  border-radius: 0 15px 15px 0;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #0065fc;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.fa-search::before {
+    display: none;
 }
 
 /* Filters */
 
+#filterSection {
+  display: flex;
+  padding-top: 50px;
+}
 
-#filter {
-    display: flex;
-    padding-top: 25px;
+#filters {
+  display: flex;
 }
 
 #filterBtns {
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .filterBtn {
-    border: 2px solid #f2f2f2;
-    border-radius: 25px;
-    height: 50px;
-    text-align: right;
-    padding-left: 55px;
-    padding-right: 20px;
-    background-color: white;
-    font-weight: bold;
-    outline: none;
-    cursor: pointer;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  height: 50px;
+  text-align: right;
+  padding-left: 55px;
+  padding-right: 20px;
+  background-color: white;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
 }
 
 #lowCostIcon {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DEEBFF;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #deebff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
 .fas::before {
-    color: #0065FC;
+  color: #0065fc;
+}
+
+/* Media Queries */
+
+/* NavBar */
+
+/* filter */
+@media screen and (max-width: 425px) {
+  /* Search bar */
+  #searchBtn {
+    position: absolute;
+    left: 360px;
+  }
+
+  .srchBtn {
+    width: 50px;
+    border-radius: 15px;
+  }
+
+  #srchBtnText {
+      display: none;
+  }
+
+  .fa-search::before {
+      display: block;
+      color: white;
+  }
+
+  #textField {
+    width: 400px;
+    padding-right: 35px;
+  }
+
+  /* filter */
+  nav {
+    margin: 0;
+    min-width: 0;
+  }
+
+  main {
+    margin: 0;
+    min-width: 0;
+  }
+
+  #filterSection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  #filters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  #filterBtns {
+    padding-bottom: 15px;
+    padding-left: 0;
+  }
 }
