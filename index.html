@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -15,20 +15,16 @@
     <title>Reservia</title>
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="container flex">
-          <img src="img/Reservia.svg" alt="Reservia Logo" class="logo">
-          <nav>
-            <ul>
-              <li><a href="#accommodations">Accommodations</a></li>
-              <li><a href="#activities">Activities</a></li>
-              <li><a href="#signUp">Sign Up</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <nav class="container">
+      <img src="img/Reservia.svg" alt="Reservia Logo" class="logo" />
+      <ul class="nav">
+        <li class="link1">
+          <a href="#accommodations">Accommodations</a>
+        </li>
+        <li class="link2"><a href="#activities">Activities</a></li>
+      </ul>
+      <button type="submit" id="signUp">Sign Up</button>
+    </nav>
     <main class="container">
       <h2>Find a place for your dream vacation</h2>
       <p>Downtown or in nature</p>
@@ -40,7 +36,7 @@
           type="text"
           name="searchBar"
           id="textField"
-          placeholder="Enter country..."
+          placeholder="Marseille, France"
           required
         />
         <div id="searchBtn">
@@ -54,31 +50,49 @@
           <h4>Filters</h4>
         </div>
         <div id="filters">
-          <div id="filterBtns">
-            <div id="lowCostIcon">
+          <div id="filterBtns" class="lowCost">
+            <div id="Icon">
               <i class="fas fa-money-bill-wave"></i>
             </div>
             <input type="button" value="Low Cost" class="filterBtn" />
           </div>
-          <div id="filterBtns">
-            <div id="lowCostIcon">
+          <div id="filterBtns" class="familyFriendly">
+            <div id="Icon">
               <i class="fas fa-child"></i>
             </div>
-            <input type="button" value="Family-firendly" class="filterBtn" />
+            <input type="button" value="Family-friendly" class="filterBtn" />
           </div>
-          <div id="filterBtns">
-            <div id="lowCostIcon">
+          <div id="filterBtns" class="romantic">
+            <div id="Icon">
               <i class="fas fa-heart"></i>
             </div>
             <input type="button" value="Romantic" class="filterBtn" />
           </div>
-          <div id="filterBtns">
-            <div id="lowCostIcon">
+          <div id="filterBtns" class="petsAllowed">
+            <div id="Icon">
               <i class="fas fa-dog"></i>
             </div>
             <input type="button" value="Pets allowed" class="filterBtn" />
           </div>
         </div>
+      </section>
+      <div id="infoDiv">
+        <i class="fas fa-info" id="infoIcon"></i>
+        <p class="infoText">
+          More than 500 accommodations are available in this city
+        </p>
+      </div>
+      <section id="accommodations">
+        <h2 id="accTitle">Accommodations in Marseille</h2>
+        <div id="accCards">
+          <div id="accCard"></div>
+          <div id="accCard"></div>
+          <div id="accCard"></div>
+          <div id="accCard"></div>
+          <div id="accCard"></div>
+          <div id="accCard"></div>
+        </div>
+        <h2 id="accShowMore">Show more</h2>
       </section>
     </main>
   </body>
