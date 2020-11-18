@@ -40,7 +40,9 @@ ul {
 /* Navbar */
 nav {
   height: 120px;
-  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
   display: flex;
   align-items: center;
 }
@@ -70,6 +72,7 @@ nav a:hover {
   border: none;
   background: none;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 #signUp:focus {
@@ -260,10 +263,24 @@ nav a:hover {
     grid-row-gap: 20px;
     height: 150px;
     width: 375px;
+    margin: 0;
+    padding: 0;
     border-bottom: 3px solid #f2f2f2;
   }
 
+  nav ul {
+    margin: 0;
+  }
+
+  nav li a {
+    border-bottom: 3px solid transparent;
+  }
+
   nav a:hover {
+      border-top: none;
+    }
+
+  nav li:hover {
     border-top: none;
     border-bottom: 2px #0065fc solid;
     padding-bottom: 25px;
@@ -273,6 +290,7 @@ nav a:hover {
   .logo {
     grid-row: 1/2;
     grid-column: 1/2;
+    padding-left: 10px;
   }
 
   .nav {
@@ -287,6 +305,7 @@ nav a:hover {
   #signUp {
     display: flex;
     justify-content: flex-end;
+    padding-right: 10px;
   }
 
   /* Search bar */
