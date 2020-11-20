@@ -265,15 +265,16 @@ nav a:hover {
     width: 375px;
     margin: 0;
     padding: 0;
-    border-bottom: 3px solid #f2f2f2;
+    /* border-bottom: 3px solid #f2f2f2; */
   }
 
   nav ul {
     margin: 0;
   }
 
-  nav li a {
-    border-bottom: 3px solid transparent;
+  nav li {
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 25px;
   }
 
   nav a:hover {
@@ -281,8 +282,7 @@ nav a:hover {
     }
 
   nav li:hover {
-    border-top: none;
-    border-bottom: 2px #0065fc solid;
+    border-bottom: 3px #0065fc solid;
     padding-bottom: 25px;
     color: #0065fc;
   }
