@@ -79,59 +79,69 @@ nav a:hover {
   outline: none;
 }
 /* Search bar */
-
 #searchBar {
-  display: flex;
-  margin-top: 20px;
+  position: relative;
+  display: inline-flex;
 }
 
-.locTagBox {
+#srchTextfield {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  height: 50px;
+  width: 380px;
+  padding: 0 105px 0 60px;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+}
+
+#srchTextfield:focus {
+  outline: none;
+}
+
+#srchTextfield::placeholder {
+  color: black;
+}
+
+#srchTextfield:focus::placeholder {
+  color: transparent;
+}
+
+button[name="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 95px;
+  outline: none;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  background-color: #0065fc;
+  color: white;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#srchLocIcon {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #f2f2f2;
   height: 50px;
   width: 50px;
+  border: none;
   border-radius: 15px 0 0 15px;
 }
 
 .fa-map-marker-alt::before {
-  font-size: 20px;
-  color: black !important;
-}
-
-#textField {
-  height: 50px;
-  padding: 0 15px 0 60px;
-  width: 285px;
-  font-size: 20px;
-  font-weight: 700;
-  border-radius: 15px 0 0 15px;
-  border: 1px solid #f2f2f2;
-  outline: none;
-}
-
-#textField::placeholder {
-  color: black;
-}
-
-#textField:focus::placeholder {
-  color: transparent;
-}
-
-.srchBtn {
-  height: 50px;
-  width: 95px;
-  border-radius: 0 15px 15px 0;
-  border: 1px solid #f2f2f2;
   font-size: 18px;
-  font-family: inherit;
-  font-weight: 700;
-  background-color: #0065fc;
-  color: white;
-  cursor: pointer;
-  outline: none;
+  color: black !important;
 }
 
 .fa-search::before {
@@ -248,13 +258,13 @@ nav a:hover {
 }
 
 /* Media Queries */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .container {
     padding: 20px 10px 10px 10px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   /* Navbar */
   nav {
     display: grid;
@@ -262,10 +272,8 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
     height: 150px;
-    width: 375px;
     margin: 0;
     padding: 0;
-    /* border-bottom: 3px solid #f2f2f2; */
   }
 
   nav ul {
@@ -309,28 +317,22 @@ nav a:hover {
   }
 
   /* Search bar */
-  #searchBtn {
-    position: absolute;
-    left: 360px;
-  }
-
-  .srchBtn {
-    width: 50px;
-    border-radius: 15px;
+  #srchTextfield {
+    width: 100%;
   }
 
   #srchBtnText {
     display: none;
   }
+  
+  button[name="submit"] {
+    width: 50px;
+    border-radius: 15px;
+  }
 
   .fa-search::before {
     display: block;
     color: white;
-  }
-
-  #textField {
-    width: 400px;
-    padding-right: 35px;
   }
 
   /* filter */
