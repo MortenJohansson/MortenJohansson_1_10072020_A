@@ -73,6 +73,11 @@ nav a:hover {
   background: none;
   margin-left: 15px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+#signUp:hover {
+  color: #5699fc;
 }
 
 #signUp:focus {
@@ -82,6 +87,7 @@ nav a:hover {
 #searchBar {
   position: relative;
   display: inline-flex;
+  margin-top: 20px;
 }
 
 #srchTextfield {
@@ -153,7 +159,10 @@ button[name="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 12px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 #filterSection {
@@ -183,6 +192,11 @@ button[name="submit"] {
   font-family: inherit;
   outline: none;
   cursor: pointer;
+  transition: 1s;
+}
+
+.filterBtn:hover {
+  background-color: #f2f2f2;
 }
 
 #Icon {
@@ -205,7 +219,7 @@ button[name="submit"] {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 5px 5px 0;
+  margin: 30px 0;
   border: 2px solid #f2f2f2;
   border-radius: 50%;
   height: 25px;
@@ -259,8 +273,13 @@ button[name="submit"] {
 
 /* Media Queries */
 @media screen and (max-width: 425px) {
+  /* general styling mobile */
   .container {
     padding: 20px 10px 10px 10px;
+  }
+
+  main > h2 {
+    padding-bottom: 10px;
   }
 }
 
@@ -317,14 +336,19 @@ button[name="submit"] {
   }
 
   /* Search bar */
-  #srchTextfield {
+
+  #searchBar {
+    margin: 35px 0 0 0;
     width: 100%;
+  }
+  #srchTextfield {
+    padding-right: 60px;
   }
 
   #srchBtnText {
     display: none;
   }
-  
+
   button[name="submit"] {
     width: 50px;
     border-radius: 15px;
@@ -339,18 +363,53 @@ button[name="submit"] {
   #filterSection {
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    margin-top: 15px;
+    padding: 0;
+  }
+
+  #filterHeader {
+    justify-content: flex-start;
+    margin: 15px 0;
   }
 
   #filters {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 200px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-row-gap: 15px;
   }
 
   #filterBtns {
-    padding-bottom: 15px;
-    padding-left: 0;
+    padding: 0;
+  }
+
+  .lowCost {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .familyFriendly {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .petsAllowed {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .romantic {
+    justify-self: end;
+  }
+
+  /* info div */
+  #infoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoText {
+    padding-left: 15px;
   }
 }
