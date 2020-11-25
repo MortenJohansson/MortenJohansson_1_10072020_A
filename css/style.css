@@ -16,6 +16,11 @@ h2 {
   margin-bottom: 5px;
 }
 
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
 p {
   margin-bottom: 5px;
   font-size: 16px;
@@ -192,7 +197,7 @@ button[name="submit"] {
   font-family: inherit;
   outline: none;
   cursor: pointer;
-  transition: 1s;
+  transition: .5s;
 }
 
 .filterBtn:hover {
@@ -237,10 +242,10 @@ button[name="submit"] {
 /* Accommodations section */
 #accommodations {
   display: grid;
-  grid-template-columns : 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
-#accBig  {
+#accBig {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   height: 625px;
@@ -250,7 +255,7 @@ button[name="submit"] {
   padding: 40px 40px;
 }
 
-#accSmall  {
+#accSmall {
   justify-self: end;
   height: 625px;
   width: 420px;
@@ -285,6 +290,32 @@ button[name="submit"] {
   grid-gap: 20px;
 }
 
+.cardHeader img {
+  width: 100%;
+  height: 115px;
+  object-fit: cover;
+  padding: 5px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.cardBody {
+  padding: 0 15px;
+}
+
+.cardPrice {
+  font-size: 14px;
+  padding: 7px 0;
+  margin: 0;
+}
+
+.fa-star {
+  font-size: 13px;
+}
+
+.cardStarGrey::before {
+  color: #f2f2f2;
+}
+
 #accCards {
   justify-self: center;
   align-self: center;
@@ -292,7 +323,7 @@ button[name="submit"] {
   width: 100%;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.07);
 }
 
 #popularCardsSection {
@@ -306,7 +337,7 @@ button[name="submit"] {
   width: 100%;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
 }
 
 /* Media Queries */
@@ -343,8 +374,8 @@ button[name="submit"] {
   }
 
   nav a:hover {
-      border-top: none;
-    }
+    border-top: none;
+  }
 
   nav li:hover {
     border-bottom: 3px #0065fc solid;
