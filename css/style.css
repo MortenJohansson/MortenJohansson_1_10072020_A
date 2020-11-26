@@ -243,6 +243,10 @@ button[name="submit"] {
 #accommodations {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 #accBig {
@@ -258,7 +262,7 @@ button[name="submit"] {
 #accSmall {
   justify-self: end;
   height: 625px;
-  width: 420px;
+  width: 100%;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 40px 35px;
@@ -367,10 +371,6 @@ button[name="submit"] {
   /* general styling mobile */
   .container {
     padding: 20px 10px 10px 10px;
-  }
-
-  main > h2 {
-    padding-bottom: 10px;
   }
 }
 
@@ -502,5 +502,42 @@ button[name="submit"] {
 
   .infoText {
     padding-left: 15px;
+  }
+
+  /* Accommodations */
+  #accommodations {
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+  }
+
+  #accSmall {
+    grid-row: 1/2;
+    justify-self: start;
+    border-radius: 0;
+    padding: 18px;
+    padding-top: 40px;
+  }
+
+  #accBig {
+    width: 100%;
+    padding: 18px;
+    padding-top: 40px ;
+    background-color: white;
+  }
+
+  #accBig > h2 {
+    padding-bottom: 20px;
+  }
+
+  #accShowMore {
+    padding-top: 30px;
+  }
+
+  #cards {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
   }
 }
