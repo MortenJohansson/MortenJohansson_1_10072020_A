@@ -179,7 +179,7 @@ button[name="submit"] {
   display: flex;
 }
 
-#filterBtns {
+.filterBtns {
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -204,7 +204,7 @@ button[name="submit"] {
   background-color: #f2f2f2;
 }
 
-#Icon {
+.Icon {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -326,7 +326,7 @@ button[name="submit"] {
   color: #f2f2f2;
 }
 
-#accCards {
+.accCards {
   justify-self: center;
   align-self: center;
   height: 200px;
@@ -342,7 +342,7 @@ button[name="submit"] {
   gap: 30px;
 }
 
-#popularCards {
+.popularCards {
   display: flex;
   justify-self: center;
   align-items: center;
@@ -387,7 +387,7 @@ button[name="submit"] {
   width: 100%;
 }
 
-#activityCard {
+.activityCard {
   display: grid;
   grid-template-rows: minmax(100px, 1fr) 55px;
   height: 100%;
@@ -440,6 +440,32 @@ button[name="submit"] {
   grid-column: 4/5;
   grid-row: 2/3;
 }
+
+/* Footer */
+#footer {
+  height: 218px;
+  background-color: #f2f2f2;
+}
+
+#footerLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 50px;
+  height: 150px;
+}
+
+#ourAccommodations {
+  align-self: start;
+}
+
+#assistance {
+  align-self: start;
+}
+
+#footerLinks li {
+  padding: 10px 0;
+}
+
 /* Media Queries */
 @media screen and (max-width: 425px) {
   /* general styling mobile */
@@ -544,7 +570,7 @@ button[name="submit"] {
     grid-row-gap: 15px;
   }
 
-  #filterBtns {
+  .filterBtns {
     padding: 0;
   }
 
@@ -591,14 +617,14 @@ button[name="submit"] {
     grid-row: 1/2;
     justify-self: start;
     border-radius: 0;
-    padding: 18px;
+    padding: 10px;
     padding-top: 40px;
   }
 
   #accBig {
     width: 100%;
     height: 1500px;
-    padding: 18px;
+    padding: 10px;
     padding-top: 40px ;
     background-color: white;
   }
@@ -621,7 +647,7 @@ button[name="submit"] {
       width: 100%;
       height: 1440px;
       margin: 0;
-      padding: 40px 18px;
+      padding: 40px 10px;
   }
 
   #activitiesCards {
@@ -631,7 +657,7 @@ button[name="submit"] {
     width: 100%;
   }
 
-  #activityCard {
+  .activityCard {
     width: 100%;
     height: 200px;
   }
@@ -664,5 +690,18 @@ button[name="submit"] {
   .cardSmall4 {
     grid-column: 1/2;
     grid-row: 6/7;
+  }
+
+  /* Footer */
+  #footer {
+    width: 100%;
+    height: 450px;
+  }
+
+  #footerLinks {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    padding-top: 20px;
   }
 }
