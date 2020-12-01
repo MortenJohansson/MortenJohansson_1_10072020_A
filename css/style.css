@@ -476,14 +476,12 @@ button[name="submit"] {
 }
 
 /* Media Queries */
-@media screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   /* general styling mobile */
   .container {
     padding: 20px 10px 10px 10px;
   }
-}
 
-@media screen and (max-width: 425px) {
   /* Navbar */
   nav {
     display: grid;
@@ -712,5 +710,68 @@ button[name="submit"] {
     grid-template-columns: 1fr;
     grid-row-gap: 20px;
     padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablets */
+  /* General */
+  .container {
+    padding: 0 10px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  /* Nav */
+  nav {
+    padding: 0 10px;
+  }
+
+  /* Filters */
+  #filterSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 0;
+  }
+
+  #filters {
+    display: flex;
+    gap: 10px;
+  }
+
+  #filterHeader {
+    justify-content: flex-start;
+    margin: 15px 0;
+  }
+
+  .filterBtns {
+    padding: 0;
+  }
+
+  /* Accommodations */
+  #accommodations {
+    padding: 0 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  #accSmall {
+    grid-row: 1/2;
+  }
+
+  #accBig {
+    width: 100%;
+  }
+
+  /* Activities */
+  #activities {
+    padding: 0 10px;
+  }
+
+  #activitiesCards {
+    grid-gap: 15px;
   }
 }
